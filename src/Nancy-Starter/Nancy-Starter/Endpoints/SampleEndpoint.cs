@@ -6,10 +6,10 @@ namespace Nancy_Starter.Endpoints
     {
         public SampleEndpoint() : base("/sample")
         {
-            Get["/"] = _ => GetSsampleData();
+            Get["/"] = _ => GetSampleData();
         }
 
-        private Response GetSsampleData()
+        private Response GetSampleData()
         {
             return "hello world";
         }
