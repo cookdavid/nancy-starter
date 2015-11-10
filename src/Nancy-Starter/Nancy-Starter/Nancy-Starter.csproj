@@ -102,7 +102,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Boostrapper.cs" />
+    <Compile Include="Bootstrapper.cs" />
     <Compile Include="Endpoints\SampleEndpoint.cs" />
     <Compile Include="Infrastructure\AppEnvironment.cs" />
     <Compile Include="Infrastructure\EnvironmentName.cs" />

@@ -4,12 +4,12 @@ using Nancy.Bootstrappers.Autofac;
 
 namespace Nancy_Starter
 {
-    public class Boostrapper : AutofacNancyBootstrapper
+    public class Bootstrapper : AutofacNancyBootstrapper
     {
         protected override void ConfigureApplicationContainer(ILifetimeScope existingContainer)
         {
             var builder = new ContainerBuilder();
-            builder.RegisterAssemblyModules(Assembly.GetAssembly(typeof(Boostrapper)));
+            builder.RegisterAssemblyModules(Assembly.GetAssembly(typeof(Bootstrapper)));
             builder.Update(existingContainer.ComponentRegistry);
         }
     }
